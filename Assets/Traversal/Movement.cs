@@ -15,17 +15,26 @@ public class Movement : MonoBehaviour
         {
             transform.Translate(Vector3.forward * speed);
         }
-        if(Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S))
         {
             transform.Translate(Vector3.back * speed);
         }
-        if(Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A))
         {
             transform.Translate(Vector3.left * speed);
         }
-        if(Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D))
         {
             transform.Translate(Vector3.right * speed);
         }
+        if (Input.GetKey(KeyCode.Mouse0)) 
+        {
+            transform.Translate(Vector3.forward * 2 * speed);
+        }
+        if (Input.GetKey(KeyCode.Mouse1))
+        {
+            transform.Translate(Vector3.forward * 6 * speed);
+        }
     }
+    
 }
